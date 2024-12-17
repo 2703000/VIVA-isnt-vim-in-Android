@@ -1,4 +1,4 @@
-项目名称：VIVA Isn't Vim in Android
+项目名称：VIVA Isn't Vim in Android\n
 Project name:VIVA Isn't Vim in Android
 简介:
 这是一个简单的C语言程序，
