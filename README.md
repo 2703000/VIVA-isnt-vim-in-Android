@@ -38,7 +38,7 @@ none
 
 ## 维护者
 - [lemonade_NingYou](https://github.com/2703000)
--.[William](https://github.com/)
+- [William](https://github.com/)
 ## 许可证
 [GPL v3.0]
 
