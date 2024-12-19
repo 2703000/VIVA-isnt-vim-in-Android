@@ -165,6 +165,20 @@ void evaluate(char expr[], NumStack *nums, OpStack *ops) {
     }
 }
 
+void printHelp() {
+    printf("Available operations:\n");
+    printf("  +   Add two numbers\n");
+    printf("  -   Subtract two numbers\n");
+    printf("  *   Multiply two numbers\n");
+    printf("  /   Divide two numbers (note: division by zero is not allowed)\n");
+    printf("  ^   Raise a number to the power of another\n");
+    printf("  s   Square root of a number\n");
+    printf("\nUsage:\n");
+    printf("  Enter an expression using the above operations.\n");
+    printf("  Example: 3 + 4 * 2\n");
+    printf("  To exit, type 'END'\n");
+}
+
 int main() {
     char expr[MAX_EXPR_LENGTH];
     NumStack nums;
@@ -173,24 +187,36 @@ int main() {
     initNumStack(&nums);
     initOpStack(&ops);
 
-    printf("Enter an expression: ");
-    if (fgets(expr, MAX_EXPR_LENGTH, stdin) == NULL) {
-        fprintf(stderr, "Error reading input\n");
-        return 1;
+    printHelp(); // Print help information
+
+    while (1) { // 使用无限循环来不断接收用户输入
+        printf("\nEnter an expression (or 'END' to exit): ");
+        if (fgets(expr, MAX_EXPR_LENGTH, stdin) == NULL) {
+            fprintf(stderr, "Error reading input\n");
+            return 1;
+        }
+
+        // Remove newline character if present
+        size_t len = strlen(expr);
+        if (len > 0 && expr[len - 1] == '\n') {
+            expr[len - 1] = '\0';
+        }
+
+        // Check if the user wants to exit
+        if (strcmp(expr, "END") == 0) {
+            break; // 如果输入"END"，则退出循环和程序
+        }
+
+        evaluate(expr, &nums, &ops);
+
+        printf("Result: %lf\n", popNum(&nums));
+
+        free(nums.data);
+        free(ops.data);
+        // 重新初始化栈，以便下一次计算
+        initNumStack(&nums);
+        initOpStack(&ops);
     }
-
-    // Remove newline character if present
-    size_t len = strlen(expr);
-    if (len > 0 && expr[len - 1] == '\n') {
-        expr[len - 1] = '\0';
-    }
-
-    evaluate(expr, &nums, &ops);
-
-    printf("Result: %lf\n", popNum(&nums));
-
-    free(nums.data);
-    free(ops.data);
 
     return 0;
 }
