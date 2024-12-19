@@ -37,8 +37,8 @@ none
 项目遵循的代码风格。
 
 ## 维护者
-- [维护者姓名](链接)
-
+- [lemonade_NingYou](https://github.com/2703000)
+-.[William](https://github.com/)
 ## 许可证
 [GPL v3.0]
 
