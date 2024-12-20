@@ -1,6 +1,9 @@
 # 项目名称
 VIVA Isn't Vim in Android
 
+# 语言
+- [简体中文](README.md)
+- [English](EN-README.md)
 ## 简介
 - 这是一个简单的C语言程序，
 - 它使用内存映射技术来编辑文件。
@@ -35,7 +38,7 @@ none
 
 ## 维护者
 - [lemonade_NingYou](https://github.com/2703000)
-- [William](https://github.com/)
+- [William-Torvalds](https://github.com/William-Torvalds)
 ## 许可证
 [GPL v3.0](LICENSE)
 
