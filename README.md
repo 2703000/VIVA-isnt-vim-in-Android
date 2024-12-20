@@ -44,7 +44,7 @@ none
 
 ## 致谢
 - [lemonade_NingYou](https://github.com/2703000)
-- [William](https://github.com/)
+- [William-Torvalds](https://github.com/William-Torvalds)
 
 ## 常见问题解答（FAQ）
 - 问题1：none
