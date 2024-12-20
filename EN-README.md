@@ -1,6 +1,9 @@
 # Project Name
 VIVA Isn't Vim in Android
 
+# Language
+[简体中文](README.md)
+[english](EN-README.md)
 ## Introduction
 - This is a simple C language program,
 - It uses memory-mapped technology to edit files.
