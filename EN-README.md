@@ -39,14 +39,14 @@ VIVA Isn't Vim in Android
 
 ## Maintainers
 - [lemonade_NingYou](https://github.com/2703000)
-- [William](https://github.com/)
+- [William-Torvalds](https://github.com/William-Torvalds)
 
 ## License
 [GPL v3.0](LICENSE)
 
 ## Acknowledgements
 - [lemonade_NingYou](https://github.com/2703000)
-- [William](https://github.com/)
+- [William-Torvalds](https://github.com/William-Torvalds)
 
 ## Frequently Asked Questions (FAQ)
 - Question 1: none
