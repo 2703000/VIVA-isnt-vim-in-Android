@@ -1,6 +1,6 @@
 # 项目名称
 VIVA Isn't Vim in Android
-
+(半维护状态）
 # 语言
 - [简体中文](README.md)
 - [English](EN-README.md)
