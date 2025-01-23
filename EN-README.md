@@ -53,5 +53,5 @@ VIVA Isn't Vim in Android
 - Question 2: none
 
 ## Contact Information
-- Email: [15721537684@163.com]
+- Email: [lemonade_NingYou@126.com]
 - Website: [none]
